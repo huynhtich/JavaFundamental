@@ -18,7 +18,7 @@ public class Buoi1 {
 
         if (bmi <18.5)
         {
-            result ="Phân loại: Gầy - nguy cơ: Thấp";
+            result = "Phân loại: Gầy - nguy cơ: Thấp";
         }
         else if(bmi >= 18.5 && bmi <= 24.9)
         {
