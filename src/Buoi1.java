@@ -3,6 +3,11 @@ import java.util.Scanner;
 public class Buoi1 {
     public static void main(String[] agrs)
     {
+        for (int i = 10; i >=0 ; i--) {
+            System.out.println(i);
+        }
+    }
+    public  static  void examBMI() {
         //Tính BMI của một người
         Scanner scanner = new Scanner(System.in);
         System.out.print("Mời bạn nhập tên: ");
@@ -10,6 +15,7 @@ public class Buoi1 {
         System.out.print("Nhập chiều cao: ");
         double height = scanner.nextDouble();
         System.out.print("Nhập cân nặng: ");
+        System.out.println();
         double weight=  scanner.nextDouble();
 
         double bmi =  computeBmi(weight, height);
@@ -44,7 +50,6 @@ public class Buoi1 {
 
         System.out.println("Bạn " + name + " Có chỉ số BMI là: " + bmi);
         System.out.println(result);
-
     }
     public static double computeBmi(double weight, double height)
     {
