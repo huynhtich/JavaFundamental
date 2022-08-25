@@ -1,11 +1,55 @@
 import java.util.Scanner;
+import java.util.Arrays;
+
 
 public class Buoi1 {
     public static void main(String[] agrs)
     {
-        for (int i = 10; i >=0 ; i--) {
-            System.out.println(i);
+//        for (int i = 10; i >=0 ; i--) {
+//            System.out.println(i);
+//        }
+
+//        for (int i = 1; i <= 100; i++) {
+//            if(i % 2 == 0) System.out.println(i);
+//        }
+//        Scanner scanner = new Scanner(System.in);
+//        System.out.print("Mời bạn nhập số tự nhiên: ");
+//        int number = scanner.nextInt();
+//        if (isPrime(number)) {
+//            System.out.println("Số " + number + " là số nguyên tố");
+//        }
+//        else {
+//            System.out.println("Số " + number + " không phải là số nguyên tố");
+//        }
+
+
+        int[] arrNumber = {2,3,4,5,6,10,1,20,30,15,16,17,18,21,22,23};
+        // Sắp xếp mảng theo thử tự tăng dần
+        Arrays.sort(arrNumber);
+//        System.out.println("Mảng cars sau khi được sắp xếp:");
+//        for (int num : arrNumber) {
+//            System.out.println(num);
+//        }
+        System.out.println("Số lớn nhất " + arrNumber[arrNumber.length - 1]);
+        for (int i = 0; i < arrNumber[arrNumber.length - 1]; i++) {
+            if(arrNumber[i] % 2 != 0)
+                System.out.println("Số nhỏ nhất " + arrNumber[i]);
+                return;
         }
+    //Hello
+    }
+    public static boolean isPrime(int n) {
+        if(n < 2) {
+            return false;
+        }
+        if(n == 2) {
+            return true;
+        }
+        for (int i = 2; i < n; i++) {
+            if(n % i == 0)
+                return false;
+        }
+        return true;
     }
     public  static  void examBMI() {
         //Tính BMI của một người
