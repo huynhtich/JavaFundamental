@@ -23,20 +23,27 @@ public class Buoi1 {
 //        }
 
 
-        int[] arrNumber = {2,3,4,5,6,10,1,20,30,15,16,17,18,21,22,23};
-        // Sắp xếp mảng theo thử tự tăng dần
-        Arrays.sort(arrNumber);
+//        int[] arrNumber = {2,3,4,5,6,10,1,20,30,15,16,17,18,21,22,23};
+//        // Sắp xếp mảng theo thử tự tăng dần
+//        Arrays.sort(arrNumber);
 //        System.out.println("Mảng cars sau khi được sắp xếp:");
 //        for (int num : arrNumber) {
 //            System.out.println(num);
 //        }
-        System.out.println("Số lớn nhất " + arrNumber[arrNumber.length - 1]);
-        for (int i = 0; i < arrNumber[arrNumber.length - 1]; i++) {
-            if(arrNumber[i] % 2 != 0)
-                System.out.println("Số nhỏ nhất " + arrNumber[i]);
-                return;
-        }
-    //Hello
+//        System.out.println("Số lớn nhất " + arrNumber[arrNumber.length - 1]);
+//        for (int i = 0; i < arrNumber[arrNumber.length - 1]; i++) {
+//            if(arrNumber[i] % 2 != 0)
+//                System.out.println("Số nhỏ nhất " + arrNumber[i]);
+//                return;
+//        }
+
+            int[] arrNumber = {2,3,4,5,6,10,1,20,30,15,16,17,18,21,22,23};
+            int i = arrNumber.length - 1;
+
+            while (i >= 0){
+                System.out.println(arrNumber[i--]);
+            }
+
     }
     public static boolean isPrime(int n) {
         if(n < 2) {
